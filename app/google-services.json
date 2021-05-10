@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "946422066627",
+    "firebase_url": "https://engelsiz-yasiyoruz-default-rtdb.firebaseio.com",
+    "project_id": "engelsiz-yasiyoruz",
+    "storage_bucket": "engelsiz-yasiyoruz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946422066627:android:8e6c95da79e7000025e176",
+        "android_client_info": {
+          "package_name": "com.nexis.proje"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "946422066627-iad8n9upef05r9gmfploal6s20c43kso.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWh6XEGDc2yP7fBwAGIXd8JOdMq1w5YD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "946422066627-iad8n9upef05r9gmfploal6s20c43kso.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

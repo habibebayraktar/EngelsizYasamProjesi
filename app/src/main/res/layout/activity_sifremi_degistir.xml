@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/b"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SifremiDegistirActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputSifre"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:counterTextAppearance="@style/CounterStye"
+        app:boxCornerRadiusTopStart="20dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sifre_degistir"
+            android:hint="Şifrenizi giriniz"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="20dp"
+        app:boxCornerRadiusTopStart="20dp"
+        android:id="@+id/inputSifreTekrar"
+        app:counterTextAppearance="@style/CounterStye"
+        app:counterEnabled="true"
+        app:counterMaxLength="20">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/sifre_degistir_tekrar"
+            android:hint="Şifrenizi Tekrar giriniz"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="HardcodedText" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/round1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_sifreDegistir"
+        android:backgroundTint="@color/back"
+        android:text="Şifreyi Değiştir"
+        app:backgroundTint="@color/back" />
+
+</LinearLayout>

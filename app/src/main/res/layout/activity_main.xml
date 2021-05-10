@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ConstraintLayout_giris"
+    android:gravity="center"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lg" />
+    <EditText
+        android:id="@+id/editGirisMail"
+
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/b"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="E-mail adresinizi giriniz"
+        android:inputType="textEmailAddress"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:textColor="@color/black"
+        android:textColorHighlight="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editGirisSifre"
+
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/b"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Şifrenizi giriniz"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGirisMail" />
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round1"
+        android:onClick="girisYap"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:text="GİRİŞ YAP"
+        android:textColor="@color/b"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sifremiUnuttum" />
+
+    <TextView
+        android:id="@+id/sifremiUnuttum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="25dp"
+        android:text="Şifremi Unuttum"
+        android:textColor="#03045E"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/editGirisSifre" />
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="Kayıt ol"
+        android:textColor="#03045E"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:backgroundTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
+        app:layout_constraintStart_toStartOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris" />
+
+
+
+
+</LinearLayout>
